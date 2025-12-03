@@ -1,0 +1,154 @@
+:root {
+    --bg-color: #ffffff;
+    --card-bg: #ffffff;
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+    --accent-color: #000000;
+    --accent-hover: #374151;
+    --border-color: #e5e7eb;
+    --blur-amount: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+}
+
+.profile-card {
+    background: var(--card-bg);
+    /* Removed glassmorphism and heavy shadows for a simpler look */
+    /* border: 1px solid var(--border-color); */
+    /* border-radius: 24px; */
+    padding: 40px 0;
+    /* Removed side padding to feel more like a document/simple page */
+    /* box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); */
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(10px);
+    text-align: center;
+    /* Center everything for the simple look */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+    letter-spacing: -0.03em;
+}
+
+.tagline {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.education-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.education-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.icon {
+    width: 20px;
+    margin-right: 10px;
+    color: var(--text-secondary);
+    display: flex;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.social-link i {
+    font-size: 1.1rem;
+    margin-right: 8px;
+}
+
+.social-link:hover {
+    color: var(--accent-color);
+}
+
+.social-link:hover i {
+    color: var(--accent-color);
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        padding: 20px 0;
+    }
+
+    .name {
+        font-size: 1.75rem;
+    }
+}
