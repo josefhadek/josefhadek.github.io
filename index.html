@@ -1,21 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josef Hádek</title>
     <meta name="description" content="Personal website of Josef Hádek, student at CULS FEM and FIS VŠE.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <main class="container">
+        <div class="profile-card">
+            <header class="header">
+                <h1 class="name">Josef Hádek</h1>
+                <p class="tagline">seeking efficiency and views<br>🥾🌿🧑‍💻⚜️☀️</p>
+            </header>
+
+            <section class="info-section">
+                <h2>Stu(dying) at</h2>
+                <ul class="education-list">
+                    <li>
+                        <a href="https://pef.czu.cz/" target="_blank" rel="noopener noreferrer" class="text-link">
+                            CZU - Faculty of Economics and Management
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://fis.vse.cz/" target="_blank" rel="noopener noreferrer" class="text-link">
+                            VSE - Faculty of Informatics and Statistics
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="info-section">
+                <h2>Big fan of</h2>
+                <ul class="education-list">
+                    <li>
+                        <span>
+                            <a href="https://www.apple.com/" target="_blank" rel="noopener noreferrer"
+                                class="text-link">Apple products</a> & European hiking trails
+                        </span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="contact-section">
+                <h2>Contact</h2>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/josef.hadek/" class="social-link" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/josefhadek/" class="social-link" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://strava.app.link/dVTsESDhNYb" class="social-link" aria-label="Strava">
+                        <i class="fa-brands fa-strava"></i>
+                        <span>Strava</span>
+                    </a>
+                    <a href="mailto:me@josefhadek.cz" class="social-link" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>E-mail</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>
