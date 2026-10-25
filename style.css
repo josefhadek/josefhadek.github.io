@@ -103,11 +103,12 @@ h2 {
 .text-link {
     color: var(--text-primary);
     text-decoration: none;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px dotted var(--text-secondary);
     transition: border-color 0.2s ease;
 }
 
 .text-link:hover {
+    border-bottom-style: solid;
     border-bottom-color: var(--accent-color);
 }
 
